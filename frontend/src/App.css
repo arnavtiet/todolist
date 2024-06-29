@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.input-form{
+    display: flex;
+   
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 50px;
+    input{
+    padding: 10px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+   }
+    button{
+        padding: 10px;
+        text-decoration: double;
+        width: calc(100% - 90%);
+        border-radius: 10px;
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        
+        outline: none;
+        border-color: #FF7F3E;
+        background-color: #FF7F3E;
+        color:white;
+        
+    }
+}
+
+
+body{
+    background-color: #FFF6E9;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list{
+    border-radius: 10px;
+    background-color: #604CC3;
+    color:#80C4E9;
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 20fr 60fr 20fr;
+    h1{
+        grid-column: 1;
+        margin-left: 10px;
+        text-align: center;
+    }
+    h2{
+        grid-column: 2;
+        margin-left: 15%;
+        overflow-x: hidden;
+        margin-right: 10px;
+    }
+    button{
+        grid-column: 3;
+        margin-top: 30px;
+        width: calc(100% - 30%);
+        height: 25px;
+        border-radius: 10px;
+        outline: none;
+        border-color: #FF7F3E;
+        background-color: #FF7F3E;
+        color:white;
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+
+.page-title
+{
+    color:#FF7F3E;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+}
+
+
+
+
+
+body {
+    --sb-track-color: #232E33;
+    --sb-thumb-color: #fff6e9;
+    --sb-size: 10px;
+  }
+  
+  body::-webkit-scrollbar {
+    width: var(--sb-size)
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 10px;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 10px;
+    
+  }
+  
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
